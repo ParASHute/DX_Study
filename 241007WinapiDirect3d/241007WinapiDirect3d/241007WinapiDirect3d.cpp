@@ -7,6 +7,9 @@
 #include <d3d11_1.h> //11.1버전
 #pragma comment(lib,"d3d11.lib") //라이브러리 추가
 
+#include <d3dcompiler.h>
+#pragma comment(lib,"d3dcompiler.lib")
+
 #include "assert.h" //오류 메시지용
 
 #define MAX_LOADSTRING 100
@@ -30,7 +33,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 {
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
-
+ㄴ
     // TODO: 여기에 코드를 입력합니다.
 
     // 전역 문자열을 초기화합니다.
@@ -50,9 +53,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
 
 
-	//장치 그래픽
+	// 장치 그래픽
 	ID3D11Device1* d3d11Device;
-	ID3D11DeviceContext1* d3d11DeviceContext; //장치 설정용
+	ID3D11DeviceContext1* d3d11DeviceContext; // 장치 설정
 
 	{
 		ID3D11Device* baseDevice;
@@ -60,15 +63,14 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		D3D_FEATURE_LEVEL featureLevels[] = { D3D_FEATURE_LEVEL_11_0 };
 		UINT creationFlags = D3D11_CREATE_DEVICE_BGRA_SUPPORT;
 
-		//장치 생성 함수
+		// 장치 생성 함수
 		HRESULT hResult = D3D11CreateDevice(0, D3D_DRIVER_TYPE_HARDWARE,
 			0, creationFlags,
 			featureLevels, ARRAYSIZE(featureLevels),
 			D3D11_SDK_VERSION, &baseDevice,
 			0,&baseDeviceContext);
-
-		//if(hResult == S_FALSE)
-		//디바이스 생성 실패
+    	
+		// 디바이스 생성 실패
 		if (FAILED(hResult)) 
 		{
 			MessageBoxA(0, "D3D11CreateDevice() failed", "Fatal Error", MB_OK);
@@ -77,12 +79,12 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
 
 		hResult = baseDevice->QueryInterface(__uuidof(ID3D11Device1), (void**)&d3d11Device);
-		assert(SUCCEEDED(hResult)); //오류 메시지 어디서 났는지
-		baseDevice->Release(); //지워줌
+		assert(SUCCEEDED(hResult)); // 오류 메시지 -> 어디서 났는지
+		baseDevice->Release(); // 지우기
 
 		baseDeviceContext->QueryInterface(__uuidof(ID3D11DeviceContext1), (void**)&d3d11DeviceContext);
 		assert(SUCCEEDED(hResult));
-		baseDeviceContext->Release(); //지워줌
+		baseDeviceContext->Release(); // 지우기 실ㅇ행
 
 	}
 
@@ -90,7 +92,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	{
 		IDXGIFactory2* dxgiFactory;
 		{
-			IDXGIDevice1* dxgiDevice; //디바이스에서 DXGI용으로 변환해서 얻음
+			IDXGIDevice1* dxgiDevice; // 디바이스에서 DXGI용으로 변환해서 얻음
 			HRESULT hResult = d3d11Device->QueryInterface(__uuidof(IDXGIDevice1),(void**)&dxgiDevice);
 			assert(SUCCEEDED(hResult));
 
@@ -100,24 +102,26 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 			dxgiDevice->Release();
 
 			DXGI_ADAPTER_DESC adapterDesc;
-			dxgiadapter->GetDesc(&adapterDesc); //내 그래픽 디바이스 정보 얻어온다.
+			dxgiadapter->GetDesc(&adapterDesc); // 내 그래픽 디바이스 정보 얻어오기.
 			OutputDebugStringA("Graphics Device : ");
-			OutputDebugStringW(adapterDesc.Description);//그래픽카드 이름 출력
+			OutputDebugStringW(adapterDesc.Description);// 그래픽카드 이름 출력
 
-			hResult = dxgiadapter->GetParent(__uuidof(IDXGIFactory2),(void**)&dxgiFactory); //설정용
+			hResult = dxgiadapter->GetParent(__uuidof(IDXGIFactory2),(void**)&dxgiFactory); // 설정용
 			assert(SUCCEEDED(hResult));
 			dxgiadapter->Release();
 		}
 		
 		DXGI_SWAP_CHAIN_DESC1 d3d11SwapChainDesc = {};
-		d3d11SwapChainDesc.Width = 0; //0이면 윈도우 사이즈 알아서 얻어와서 만든다.
-		d3d11SwapChainDesc.Height = 0; //0이면 윈도우 사이즈 알아서 얻어와서 만든다.
-		d3d11SwapChainDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM_SRGB; //그래픽 픽셀 타입?
+    	// 0이면 윈도우 사이즈 알아서 얻어와서 만든다.
+    	d3d11SwapChainDesc.Width = 0; 
+		d3d11SwapChainDesc.Height = 0;
+    	
+		d3d11SwapChainDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM_SRGB; // 픽샐의 색을 각각 8bit
 		d3d11SwapChainDesc.SampleDesc.Count = 1;
 		d3d11SwapChainDesc.SampleDesc.Quality = 0;
 		d3d11SwapChainDesc.BufferUsage = DXGI_USAGE_RENDER_TARGET_OUTPUT;
-		d3d11SwapChainDesc.BufferCount = 2; //더블 버퍼팅
-		d3d11SwapChainDesc.Scaling = DXGI_SCALING_STRETCH; //창사이즈 바뀌면 따라감
+		d3d11SwapChainDesc.BufferCount = 2; // 더블 버퍼팅
+		d3d11SwapChainDesc.Scaling = DXGI_SCALING_STRETCH; // 창사이즈 바뀌면 따라감
 		d3d11SwapChainDesc.SwapEffect = DXGI_SWAP_EFFECT_DISCARD;
 		d3d11SwapChainDesc.AlphaMode = DXGI_ALPHA_MODE_UNSPECIFIED;
 		d3d11SwapChainDesc.Flags = 0;
@@ -131,14 +135,118 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	{
 		ID3D11Texture2D* d3d11frameBuffer;
 
-		//버퍼 얻어온다.
+		// 버퍼 얻기
 		HRESULT hResult = d3d11SwapChain->GetBuffer(0,__uuidof(ID3D11Texture2D),(void**)&d3d11frameBuffer);
 		assert(SUCCEEDED(hResult));
 
-		//출력할 타겟 뷰 만든다.
+		// 출력할 타겟 뷰 만들기
 		hResult = d3d11Device->CreateRenderTargetView(d3d11frameBuffer,0, &d3d11FrameBufferView);
 		assert(SUCCEEDED(hResult));
 		d3d11frameBuffer->Release();
+	}
+	
+
+	// 버텍스 쉐이더
+	ID3DBlob* vsBlob;
+	ID3D11VertexShader* vertexShader;
+	{
+		ID3DBlob* shaderCompileErrorsBlob;
+		HRESULT hResult =D3DCompileFromFile(L"Shader.hlsl",nullptr, nullptr,
+			"vs_main","vs_5_0",0,0,&vsBlob,&shaderCompileErrorsBlob);
+		if (FAILED(hResult))
+		{
+			const char* errorString = NULL;
+			if (hResult == HRESULT_FROM_WIN32(ERROR_FILE_NOT_FOUND))
+				errorString = "쉐이더 파일 못찾았다.";
+			else if (shaderCompileErrorsBlob) // 컴파일 오류 났을때 
+			{
+				errorString = (const char*)shaderCompileErrorsBlob->GetBufferPointer();
+				shaderCompileErrorsBlob->Release();
+			}
+			MessageBoxA(0,errorString,"Shader Compiler Error",MB_OK);
+			return 1;
+		}
+		hResult = d3d11Device->CreateVertexShader(
+			vsBlob->GetBufferPointer(),
+			vsBlob->GetBufferSize(),
+		nullptr,&vertexShader);
+		assert(SUCCEEDED(hResult));
+	}
+
+
+	// 픽셀 쉐이더
+	ID3D11PixelShader* pixelShader;
+	{
+		ID3DBlob* psBlob;
+		ID3DBlob* shaderCompileErrorsBlob;
+		HRESULT hResult = D3DCompileFromFile(L"Shader.hlsl", nullptr, nullptr,
+			"ps_main", "ps_5_0", 0, 0, &psBlob, &shaderCompileErrorsBlob);
+		if (FAILED(hResult))
+		{
+			const char* errorString = NULL;
+			if (hResult == HRESULT_FROM_WIN32(ERROR_FILE_NOT_FOUND))
+				errorString = "쉐이더 파일 못찾았다.";
+			else if (shaderCompileErrorsBlob)
+			{
+				errorString = (const char*)shaderCompileErrorsBlob->GetBufferPointer();
+				shaderCompileErrorsBlob->Release();
+			}
+			MessageBoxA(0, errorString, "Shader Compiler Error", MB_OK);
+			return 1;
+		}
+		hResult = d3d11Device->CreatePixelShader(
+			psBlob->GetBufferPointer(),
+			psBlob->GetBufferSize(),
+			nullptr, &pixelShader);
+		assert(SUCCEEDED(hResult));
+	}
+
+
+	// 쉐이더 자료형 연결
+	ID3D11InputLayout* inputLayout;
+	{
+		D3D11_INPUT_ELEMENT_DESC inputElementDesc[] =
+		{
+			{"POS",0,DXGI_FORMAT_R32G32_FLOAT,0,0,D3D11_INPUT_PER_VERTEX_DATA,0},
+			{"COL",0,DXGI_FORMAT_R32G32B32A32_FLOAT,0,D3D11_APPEND_ALIGNED_ELEMENT,
+			D3D11_INPUT_PER_VERTEX_DATA,0}
+		};
+
+		HRESULT hResult = d3d11Device->CreateInputLayout(inputElementDesc,ARRAYSIZE(inputElementDesc),
+			vsBlob->GetBufferPointer(),vsBlob->GetBufferSize(),&inputLayout);
+
+		assert(SUCCEEDED(hResult));
+		vsBlob->Release();
+	}
+
+	// 버텍스 버퍼 생성
+	ID3D11Buffer* vertexBuffer;
+	UINT numVerts; // 점 갯수
+	UINT stride; // 점 자료형 크기
+	UINT Offset; // 시작점
+	{
+		//x,y, rgba
+		float vertexData[] =
+		{
+			//x , y  , R  , G  , B  ,A
+			0.0f,0.5f, 1.f, 0.f, 0.f, 1.f,
+			0.5f,-0.5f, 0.f, 0.f, 1.f, 1.f,
+			-0.5f,-0.5f, 0.f, 1.f, 0.f, 1.f,
+		};
+		stride = 6 * sizeof(float); // float 6개씩 
+		numVerts = sizeof(vertexData) / stride;
+		Offset = 0;
+		D3D11_BUFFER_DESC vertexBufferDesc = {};
+		vertexBufferDesc.ByteWidth = sizeof(vertexData);
+		vertexBufferDesc.Usage = D3D11_USAGE_IMMUTABLE;
+		vertexBufferDesc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
+
+		D3D11_SUBRESOURCE_DATA vertexSubreousrceData = { vertexData };
+		HRESULT hresult= d3d11Device->CreateBuffer(
+			&vertexBufferDesc,
+			&vertexSubreousrceData,
+			&vertexBuffer);
+		assert(SUCCEEDED(hresult));
 	}
 
 
@@ -147,10 +255,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	bool IsRunning = true;
 	while(IsRunning)
     {
-		//윈도우 메시지 처리 부분
+		// 윈도우 메시지 처리 부분
 		while (PeekMessageW(&msg,0,0,0,PM_REMOVE))
 		{
-			//프로그램 종료시 루프 끔
+			// 프로그램 종료시 루프 끔
 			if (msg.message == WM_QUIT)
 				IsRunning = false;
 
@@ -163,6 +271,25 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
 		FLOAT backgroundColor[4] = { 0.1f, 0.1f, 0.6f, 1.0f };
 		d3d11DeviceContext->ClearRenderTargetView(d3d11FrameBufferView, backgroundColor);
+
+
+		RECT winRect;
+		GetClientRect(g_hWnd, &winRect);
+
+		D3D11_VIEWPORT viewport = { 0.0f, 0.0f, (FLOAT)(winRect.right - winRect.left), (FLOAT)(winRect.bottom - winRect.top), 0.0f, 1.0f };
+		d3d11DeviceContext->RSSetViewports(1, &viewport);
+
+		d3d11DeviceContext->OMSetRenderTargets(1, &d3d11FrameBufferView, nullptr);
+
+		d3d11DeviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
+		d3d11DeviceContext->IASetInputLayout(inputLayout);
+
+		d3d11DeviceContext->VSSetShader(vertexShader, nullptr, 0);
+		d3d11DeviceContext->PSSetShader(pixelShader, nullptr, 0);
+
+		d3d11DeviceContext->IASetVertexBuffers(0, 1, &vertexBuffer, &stride, &Offset);
+
+		d3d11DeviceContext->Draw(numVerts, 0);
 
 		d3d11SwapChain->Present(1, 0);
     }
