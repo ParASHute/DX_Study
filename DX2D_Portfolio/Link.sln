@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest", "UnitTest\UnitTest.vcxproj", "{BD7C5D97-DA38-4E99-BB47-52EF1DA335B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{43815D25-7089-404B-BB9C-F070BC11BC6E} = {43815D25-7089-404B-BB9C-F070BC11BC6E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Framework", "Framework\Framework.vcxproj", "{43815D25-7089-404B-BB9C-F070BC11BC6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Shaders", "_Shaders", "{AC7E2FD3-2871-417D-88FD-9C87179DFF7E}"
+	ProjectSection(SolutionItems) = preProject
+		_Shaders\TextureAlpha.hlsl = _Shaders\TextureAlpha.hlsl
+		_Shaders\TextureShader.hlsl = _Shaders\TextureShader.hlsl
+		_Shaders\VertexColor.hlsl = _Shaders\VertexColor.hlsl
+		_Shaders\VertexTexture.hlsl = _Shaders\VertexTexture.hlsl
+		_Shaders\VertexTile.hlsl = _Shaders\VertexTile.hlsl
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD7C5D97-DA38-4E99-BB47-52EF1DA335B3}.Debug|x64.ActiveCfg = Debug|Win32
+		{BD7C5D97-DA38-4E99-BB47-52EF1DA335B3}.Debug|x64.Build.0 = Debug|Win32
+		{BD7C5D97-DA38-4E99-BB47-52EF1DA335B3}.Debug|x86.ActiveCfg = Debug|Win32
+		{BD7C5D97-DA38-4E99-BB47-52EF1DA335B3}.Debug|x86.Build.0 = Debug|Win32
+		{BD7C5D97-DA38-4E99-BB47-52EF1DA335B3}.Release|x64.ActiveCfg = Release|x64
+		{BD7C5D97-DA38-4E99-BB47-52EF1DA335B3}.Release|x64.Build.0 = Release|x64
+		{BD7C5D97-DA38-4E99-BB47-52EF1DA335B3}.Release|x86.ActiveCfg = Release|Win32
+		{BD7C5D97-DA38-4E99-BB47-52EF1DA335B3}.Release|x86.Build.0 = Release|Win32
+		{43815D25-7089-404B-BB9C-F070BC11BC6E}.Debug|x64.ActiveCfg = Debug|Win32
+		{43815D25-7089-404B-BB9C-F070BC11BC6E}.Debug|x64.Build.0 = Debug|Win32
+		{43815D25-7089-404B-BB9C-F070BC11BC6E}.Debug|x86.ActiveCfg = Debug|Win32
+		{43815D25-7089-404B-BB9C-F070BC11BC6E}.Debug|x86.Build.0 = Debug|Win32
+		{43815D25-7089-404B-BB9C-F070BC11BC6E}.Release|x64.ActiveCfg = Release|x64
+		{43815D25-7089-404B-BB9C-F070BC11BC6E}.Release|x64.Build.0 = Release|x64
+		{43815D25-7089-404B-BB9C-F070BC11BC6E}.Release|x86.ActiveCfg = Release|Win32
+		{43815D25-7089-404B-BB9C-F070BC11BC6E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6D4ED3D-CEFA-42A1-911B-B5F0E2FF39F4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Program.h" />
+    <ClInclude Include="TestScene\00_PlayerTest\PlayerTest_Spear.h" />
+    <ClInclude Include="MakeMap\MakeMap.h" />
+    <ClInclude Include="TestScene\01_PlayerAnimationTest\01_PlayerAnimationTest.h" />
+    <ClInclude Include="Map\1-1\Base\Map_1-1Base.h" />
+    <ClInclude Include="Map\1-1\NeedAABB\Border.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="TestScene\00_PlayerTest\PlayerTest_Spear.cpp" />
+    <ClCompile Include="MakeMap\MakeMap.cpp" />
+    <ClCompile Include="TestScene\01_PlayerAnimationTest\01_PlayerAnimationTest.cpp" />
+    <ClCompile Include="Map\1-1\Base\Map_1-1Base.cpp" />
+    <ClCompile Include="Map\1-1\NeedAABB\Border.cpp" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,54 @@
+﻿  Framework.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  AnimationRect.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  Rect.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  ShadedTexture.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  TextureRect.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  IndexBuffer.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  InputLayout.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  VertexBuffer.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  Texture2D.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  VertexType.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  IShader.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  PixelShader.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  VertexShader.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  States.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  Graphics.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  Keyboard.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  Mouse.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  Time.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  Window.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  Animator.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  BoundingBox.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  DirectHelper.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  FileStream.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  Gui.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  Path.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  Random.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
+  String.cpp
+C:\Users\ParASHute\Documents\GitHub\Portfolio\DX_Portfolio\Framework\Framework.h(24,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'D3DX10math.h': No such file or directory
