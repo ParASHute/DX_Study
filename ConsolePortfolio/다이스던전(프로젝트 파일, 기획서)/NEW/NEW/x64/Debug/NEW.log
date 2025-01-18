@@ -1,0 +1,6 @@
+﻿  Scene.cpp
+C:\Users\ParASHute\source\repos\NEW\NEW\Global\Define\Maneger.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+C:\Users\ParASHute\source\repos\NEW\NEW\Scene\Scene.cpp(1634,8): warning C4101: 'mChoice' :참조되지 않은 지역 변수입니다.
+C:\Users\ParASHute\source\repos\NEW\NEW\Scene\Scene.cpp(2812,16): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\ParASHute\source\repos\NEW\NEW\Scene\Scene.cpp(2812,19): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+  NEW.vcxproj -> C:\Users\ParASHute\source\repos\NEW\x64\Debug\NEW.exe

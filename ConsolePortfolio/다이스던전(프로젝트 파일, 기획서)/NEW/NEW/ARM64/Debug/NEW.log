@@ -1,0 +1,4 @@
+﻿  Main.cpp
+C:\Users\ParASHute\source\repos\NEW\NEW\Main.cpp(18,25): error C2243: '형식 캐스트': 'Kobold *'에서 'cMonster *'(으)로의 변환이 있지만 액세스할 수 없습니다.
+  Scene.cpp
+  코드를 생성하고 있습니다...
