@@ -1,0 +1,35 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Output 디렉터리가 슬래시로 끝나지 않습니다. Output 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
+  Font.cpp
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Headers\Vector2.h(11,26): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Headers\Vector2.h(11,38): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Headers\Vector2.h(104,15): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Utillities\Font.cpp(132,30): warning C4267: '인수': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Utillities\Font.cpp(156,30): warning C4267: '인수': 'size_t'에서 'UINT32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Utillities\Font.cpp(161,75): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Utillities\Font.cpp(164,88): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  TimeManager.cpp
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Headers\Vector2.h(11,26): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Headers\Vector2.h(11,38): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Headers\Vector2.h(104,15): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Utillities\TimeManager.cpp(3,2): warning C4273: 'TimeManager::TimeManager': dll 연결이 일치하지 않습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Utillities\TimeManager.h(38,2): message : '{ctor}'의 이전 정의를 참조하십시오.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Utillities\TimeManager.cpp(9,1): warning C4273: 'TimeManager::~TimeManager': dll 연결이 일치하지 않습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Utillities\TimeManager.h(39,3): message : '{dtor}'의 이전 정의를 참조하십시오.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Utillities\TimeManager.cpp(15,1): warning C4273: 'TimeManager::InitTimeMgr': dll 연결이 일치하지 않습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Utillities\TimeManager.h(20,7): message : 'InitTimeMgr'의 이전 정의를 참조하십시오.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Utillities\TimeManager.cpp(26,1): warning C4273: 'TimeManager::SetTime': dll 연결이 일치하지 않습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Utillities\TimeManager.h(21,7): message : 'SetTime'의 이전 정의를 참조하십시오.
+  Device.cpp
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Headers\Vector2.h(11,26): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Headers\Vector2.h(11,38): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Headers\Vector2.h(104,15): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  SystemFunc.cpp
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Headers\Vector2.h(11,26): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Headers\Vector2.h(11,38): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Headers\Vector2.h(104,15): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Include\SystemFunc.h(33,55): warning C4190: 'ChangeWString'에 C 연결을 지정했으나 C와 호환되지 않는 UDT 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'을(를) 반환합니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4906): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' 선언을 참조하십시오.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Include\SystemFunc.cpp(63,1): warning C4190: 'ChangeWString'에 C 연결을 지정했으나 C와 호환되지 않는 UDT 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'을(를) 반환합니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4906): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' 선언을 참조하십시오.
+  코드를 생성하고 있습니다...
+  SystemDLL.vcxproj -> C:\BA\2410153d\Direct3DFrame\SystemDLL\bin\SystemDLL.dll

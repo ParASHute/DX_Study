@@ -1,0 +1,11 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Output 디렉터리가 슬래시로 끝나지 않습니다. Output 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
+  SystemFunc.cpp
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Include\SystemFunc.h(33,55): warning C4190: 'ChangeWString'에 C 연결을 지정했으나 C와 호환되지 않는 UDT 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'을(를) 반환합니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4906): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' 선언을 참조하십시오.
+C:\BA\2410153d\Direct3DFrame\SystemDLL\Include\SystemFunc.cpp(63,1): warning C4190: 'ChangeWString'에 C 연결을 지정했으나 C와 호환되지 않는 UDT 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'을(를) 반환합니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4906): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' 선언을 참조하십시오.
+     ../bin\SystemDLL.lib 라이브러리 및 ../bin\SystemDLL.exp 개체를 생성하고 있습니다.
+LINK : warning LNK4217: '?GetInstance@Device@@SAPEAPEAV1@XZ (public: static class Device * * __cdecl Device::GetInstance(void))'에 정의된 'Device.obj' 기호를 함수 'Font.obj'에서 '"public: __cdecl Font::Font(void)" (??0Font@@QEAA@XZ)'이(가) 가져왔습니다.
+LINK : warning LNK4217: '?GetDevice@Device@@QEAAPEAUID3D11Device1@@XZ (public: struct ID3D11Device1 * __cdecl Device::GetDevice(void))'에 정의된 'Device.obj' 기호를 함수 'Font.obj'에서 '"public: __cdecl Font::Font(void)" (??0Font@@QEAA@XZ)'이(가) 가져왔습니다.
+LINK : warning LNK4217: '?GetSwapChain@Device@@QEAAPEAUIDXGISwapChain1@@XZ (public: struct IDXGISwapChain1 * __cdecl Device::GetSwapChain(void))'에 정의된 'Device.obj' 기호를 함수 'Font.obj'에서 '"public: __cdecl Font::Font(void)" (??0Font@@QEAA@XZ)'이(가) 가져왔습니다.
+  SystemDLL.vcxproj -> C:\BA\2410153d\Direct3DFrame\SystemDLL\bin\SystemDLL.dll

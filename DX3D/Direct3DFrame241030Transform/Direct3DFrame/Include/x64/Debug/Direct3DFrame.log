@@ -1,0 +1,135 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Output 디렉터리가 슬래시로 끝나지 않습니다. Output 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
+  Component.cpp
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,26): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,38): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(104,15): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\SystemFunc.h(33,55): warning C4190: 'ChangeWString'에 C 연결을 지정했으나 C와 호환되지 않는 UDT 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'을(를) 반환합니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4906): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' 선언을 참조하십시오.
+  GameObject.cpp
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,26): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,38): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(104,15): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\SystemFunc.h(33,55): warning C4190: 'ChangeWString'에 C 연결을 지정했으나 C와 호환되지 않는 UDT 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'을(를) 반환합니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4906): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' 선언을 참조하십시오.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2575,23): warning C4244: '인수': 'wchar_t'에서 'const _Elem'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Elem=char
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2586): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(_Iter,const _Iter,std::input_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2586): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(_Iter,const _Iter,std::input_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2566): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(const _Iter,const _Iter,std::forward_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2566): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(const _Iter,const _Iter,std::forward_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\BA\2410153d\Direct3DFrame\Direct3DFrame\Codes\GameObject.h(19): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+C:\BA\2410153d\Direct3DFrame\Direct3DFrame\Codes\GameObject.h(19): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+  MainApp.cpp
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,26): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,38): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(104,15): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\SystemFunc.h(33,55): warning C4190: 'ChangeWString'에 C 연결을 지정했으나 C와 호환되지 않는 UDT 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'을(를) 반환합니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4906): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' 선언을 참조하십시오.
+  ObjectManager.cpp
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,26): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,38): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(104,15): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\SystemFunc.h(33,55): warning C4190: 'ChangeWString'에 C 연결을 지정했으나 C와 호환되지 않는 UDT 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'을(를) 반환합니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4906): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' 선언을 참조하십시오.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2575,23): warning C4244: '인수': 'wchar_t'에서 'const _Elem'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              _Elem=char
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2586): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(_Iter,const _Iter,std::input_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2586): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(_Iter,const _Iter,std::input_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2566): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(const _Iter,const _Iter,std::forward_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(2566): message : 컴파일되는 함수 템플릿 인스턴스화 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct<wchar_t*>(const _Iter,const _Iter,std::forward_iterator_tag)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Iter=wchar_t *
+          ]
+C:\BA\2410153d\Direct3DFrame\Direct3DFrame\Codes\GameObject.h(19): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+C:\BA\2410153d\Direct3DFrame\Direct3DFrame\Codes\GameObject.h(19): message : 컴파일되는 함수 템플릿 인스턴스화 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)'에 대한 참조를 확인하세요.
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+  SceneManager.cpp
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,26): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,38): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(104,15): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\SystemFunc.h(33,55): warning C4190: 'ChangeWString'에 C 연결을 지정했으나 C와 호환되지 않는 UDT 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'을(를) 반환합니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4906): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' 선언을 참조하십시오.
+  SceneObject.cpp
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,26): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,38): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(104,15): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\SystemFunc.h(33,55): warning C4190: 'ChangeWString'에 C 연결을 지정했으나 C와 호환되지 않는 UDT 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'을(를) 반환합니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4906): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' 선언을 참조하십시오.
+  Stage.cpp
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,26): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,38): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(104,15): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\SystemFunc.h(33,55): warning C4190: 'ChangeWString'에 C 연결을 지정했으나 C와 호환되지 않는 UDT 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'을(를) 반환합니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4906): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' 선언을 참조하십시오.
+  Transform.cpp
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,26): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,38): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(104,15): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\SystemFunc.h(33,55): warning C4190: 'ChangeWString'에 C 연결을 지정했으나 C와 호환되지 않는 UDT 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'을(를) 반환합니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4906): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' 선언을 참조하십시오.
+  Direct3DFrame.cpp
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,26): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(11,38): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\Vector2.h(104,15): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\BA\2410153d\Direct3DFrame\Reference\SystemDLL\Headers\SystemFunc.h(33,55): warning C4190: 'ChangeWString'에 C 연결을 지정했으나 C와 호환되지 않는 UDT 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>'을(를) 반환합니다.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include\xstring(4906): message : 'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>' 선언을 참조하십시오.
+  코드를 생성하고 있습니다...
+  Direct3DFrame.vcxproj -> C:\BA\2410153d\Direct3DFrame\Direct3DFrame\bin\Direct3DFrame.exe

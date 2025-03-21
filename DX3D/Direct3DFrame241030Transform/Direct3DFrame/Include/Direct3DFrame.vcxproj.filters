@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="0.MainApp">
+      <UniqueIdentifier>{d2ca1963-1da5-4221-b869-71404431a7f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1.Scene">
+      <UniqueIdentifier>{d1d4f5e4-9f9d-467f-b712-c863d93dcaba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1.Scene\Scene">
+      <UniqueIdentifier>{95aa9ca8-5daf-482a-bf05-34ce687ba18b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Header">
+      <UniqueIdentifier>{69505758-4bd6-4580-9593-b724d38a7f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3.Manager">
+      <UniqueIdentifier>{c5f2fc53-98dc-48b6-acf4-061c732a22b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3.Manager\SceneManager">
+      <UniqueIdentifier>{595ad7d8-26e1-435a-a6c7-32675df52fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2,GameObject">
+      <UniqueIdentifier>{80cc0d36-b31f-4b9d-8002-f7af925d5883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2,GameObject\Component">
+      <UniqueIdentifier>{d846af47-a505-47bf-a4f2-b2033495eb2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="9.DataStruct">
+      <UniqueIdentifier>{d0dd84af-3ded-426a-9cd3-a9996bdaf4b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3.Manager\ObjectManager">
+      <UniqueIdentifier>{5643bbaf-cdc2-4d44-8a24-53759a7d2aa3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3DFrame.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\MainApp.h">
+      <Filter>0.MainApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\SceneObject.h">
+      <Filter>1.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\Stage.h">
+      <Filter>1.Scene\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\SceneManager.h">
+      <Filter>3.Manager\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Macro.h">
+      <Filter>99.Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Constant.h">
+      <Filter>99.Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\GameObject.h">
+      <Filter>2,GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\Component.h">
+      <Filter>2,GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\HashTable.h">
+      <Filter>9.DataStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\ObjectManager.h">
+      <Filter>3.Manager\ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Codes\Transform.h">
+      <Filter>2,GameObject\Component</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Direct3DFrame.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\MainApp.cpp">
+      <Filter>0.MainApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\SceneObject.cpp">
+      <Filter>1.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Stage.cpp">
+      <Filter>1.Scene\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\SceneManager.cpp">
+      <Filter>3.Manager\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\GameObject.cpp">
+      <Filter>2,GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Component.cpp">
+      <Filter>2,GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\ObjectManager.cpp">
+      <Filter>3.Manager\ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Transform.cpp">
+      <Filter>2,GameObject\Component</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Direct3DFrame.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Direct3DFrame.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
